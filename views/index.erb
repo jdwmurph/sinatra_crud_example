@@ -1,0 +1,8 @@
+Hello world!
+
+Create a new user <a href="/users/new">here</a>.
+Here are the users:
+
+<% @users.each do |user| %>
+  <p><a href="/users/<%= user.id %>"><%= user.email %></a> </p>
+<% end %>
